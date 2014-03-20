@@ -12,6 +12,21 @@ sofa.define('sofa.UrlConstructionService', function (configService) {
     var self = {};
 
     /**
+     * @method createUrlForContentPage
+     * @memberof sofa.UrlConstructionService
+     *
+     * @description
+     * Creates url for content page.
+     *
+     * @param {string} pageId
+     * @return {string} Url
+     */
+    self.createUrlForContentPage = function (pageId) {
+        return '/pages/' + pageId;
+    };
+
+
+    /**
      * @method createUrlForProducts
      * @memberof sofa.UrlConstructionService
      *

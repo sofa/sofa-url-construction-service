@@ -46,6 +46,21 @@ describe('sofa.UrlConstructionService', function () {
         expect(urlConstructionService.createUrlForShippingCostsPage).toBeDefined();
     });
 
+    describe('sofa.UrlConstructionService#createUrlForContentPage', function () {
+
+        it('should be a function', function () {
+            expect(typeof urlConstructionService.createUrlForContentPage).toBe('function');
+        });
+
+        it('should return a string', function () {
+            expect(typeof urlConstructionService.createUrlForContentPage()).toBe('string');
+        });
+
+        it('should return url for products', function () {
+            expect(urlConstructionService.createUrlForContentPage('foo')).toEqual('/pages/foo');
+        });
+    });
+
     describe('sofa.UrlConstructionService#createUrlForProducts', function () {
 
         it('should be a function', function () {
