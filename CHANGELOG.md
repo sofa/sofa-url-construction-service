@@ -1,3 +1,13 @@
+<a name="0.2.1"></a>
+### 0.2.1 (2014-04-16)
+
+
+#### Bug Fixes
+
+* **Gruntfile:** fixes license banner ([e754bfa5](https://github.com/sofa/sofa-url-construction-service/commit/e754bfa5d2af1c28c358e3c88b9fdcfa4ab7ee90))
+* **LICENSE:** fixes naming ([84b1bd7d](https://github.com/sofa/sofa-url-construction-service/commit/84b1bd7dab8ac7964869c597427bcca7194e510f))
+
+
 <a name="0.1.1"></a>
 ### 0.1.1 (2014-03-11)
 
