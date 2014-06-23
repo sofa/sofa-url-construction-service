@@ -1,5 +1,5 @@
 /**
- * sofa-url-construction-service - v0.2.1 - 2014-04-16
+ * sofa-url-construction-service - v0.3.0 - 2014-06-23
  * http://www.sofa.io
  *
  * Copyright (c) 2014 CouchCommerce GmbH (http://www.couchcommerce.com / http://www.sofa.io) and other contributors
@@ -33,49 +33,6 @@ sofa.define('sofa.UrlConstructionService', function (configService) {
      */
     self.createUrlForContentPage = function (pageId) {
         return '/pages/' + pageId;
-    };
-
-
-    /**
-     * @method createUrlForProducts
-     * @memberof sofa.UrlConstructionService
-     *
-     * @description
-     * Creates url for products.
-     *
-     * @param {int} categoryUrlId Category url id.
-     * @return {string} Url
-     */
-    self.createUrlForProducts = function (categoryUrlId) {
-        return '/cat/' + categoryUrlId + '/products';
-    };
-
-    /**
-     * @method createUrlForProduct
-     * @memberof sofa.UrlConstructionService
-     *
-     * @description
-     * Creates url for a product.
-     *
-     * @param {product} product Product object.
-     * @return {string} Url
-     */
-    self.createUrlForProduct = function (product) {
-        return '/cat/' + product.categoryUrlId + '/product/' + product.urlKey;
-    };
-
-    /**
-     * @method createUrlForCategory
-     * @memberof sofa.UrlConstructionService
-     *
-     * @description
-     * Creates url for a category.
-     *
-     * @param {int} categoryUrlId Category url id.
-     * @return {string} Url
-     */
-    self.createUrlForCategory = function (categoryUrlId) {
-        return '/cat/' + categoryUrlId;
     };
 
     /**
