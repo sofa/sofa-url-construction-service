@@ -1,3 +1,12 @@
+<a name="0.3.1"></a>
+### 0.3.1 (2014-06-23)
+
+
+#### Bug Fixes
+
+* **tests:** remove rotten tests ([9235df2e](https://github.com/sofa/sofa-url-construction-service/commit/9235df2ef456f97099d9150396da7014433719ef))
+
+
 <a name="0.3.0"></a>
 ## 0.3.0 (2014-06-23)
 
