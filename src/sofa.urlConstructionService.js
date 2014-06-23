@@ -25,49 +25,6 @@ sofa.define('sofa.UrlConstructionService', function (configService) {
         return '/pages/' + pageId;
     };
 
-
-    /**
-     * @method createUrlForProducts
-     * @memberof sofa.UrlConstructionService
-     *
-     * @description
-     * Creates url for products.
-     *
-     * @param {int} categoryUrlId Category url id.
-     * @return {string} Url
-     */
-    self.createUrlForProducts = function (categoryUrlId) {
-        return '/cat/' + categoryUrlId + '/products';
-    };
-
-    /**
-     * @method createUrlForProduct
-     * @memberof sofa.UrlConstructionService
-     *
-     * @description
-     * Creates url for a product.
-     *
-     * @param {product} product Product object.
-     * @return {string} Url
-     */
-    self.createUrlForProduct = function (product) {
-        return '/cat/' + product.categoryUrlId + '/product/' + product.urlKey;
-    };
-
-    /**
-     * @method createUrlForCategory
-     * @memberof sofa.UrlConstructionService
-     *
-     * @description
-     * Creates url for a category.
-     *
-     * @param {int} categoryUrlId Category url id.
-     * @return {string} Url
-     */
-    self.createUrlForCategory = function (categoryUrlId) {
-        return '/cat/' + categoryUrlId;
-    };
-
     /**
      * @method createUrlForRootCategory
      * @memberof sofa.UrlConstructionService
