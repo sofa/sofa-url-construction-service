@@ -1,3 +1,12 @@
+<a name="0.5.1"></a>
+### 0.5.1 (2014-12-08)
+
+
+#### Bug Fixes
+
+* **sofa.urlConstructionService:** corrects mainfolder in `bower.json` ([5162420c](https://github.com/sofa/sofa-url-construction-service/commit/5162420c4ce496d917f1d44d74b544b4893d4d25))
+
+
 <a name="0.5.0"></a>
 ## 0.5.0 (2014-08-05)
 
