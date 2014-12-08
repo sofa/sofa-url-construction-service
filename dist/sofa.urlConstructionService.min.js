@@ -1,5 +1,5 @@
 /**
- * sofa-url-construction-service - v0.5.0 - 2014-08-05
+ * sofa-url-construction-service - v0.5.1 - 2014-12-08
  * http://www.sofa.io
  *
  * Copyright (c) 2014 CouchCommerce GmbH (http://www.couchcommerce.com / http://www.sofa.io) and other contributors
