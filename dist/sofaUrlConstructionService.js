@@ -1,11 +1,5 @@
 /**
-<<<<<<< HEAD:dist/sofa.urlConstructionService.js
- * sofa-url-construction-service - v0.5.1 - 2014-12-08
-||||||| merged common ancestors
- * sofa-url-construction-service - v0.5.0 - 2014-08-05
-=======
- * sofa-url-construction-service - v0.5.0 - Wed Feb 04 2015 17:43:50 GMT+0100 (CET)
->>>>>>> chore(dep): updates build process and generates new files:dist/sofaUrlConstructionService.js
+ * sofa-url-construction-service - v0.5.1 - Wed Feb 04 2015 17:51:18 GMT+0100 (CET)
  * http://www.sofa.io
  *
  * Copyright (c) 2014 CouchCommerce GmbH (http://www.couchcommerce.com / http://www.sofa.io) and other contributors

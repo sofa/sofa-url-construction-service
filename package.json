@@ -1,6 +1,6 @@
 {
     "name": "sofa-url-construction-service",
-    "version": "0.5.1",
+    "version": "0.5.2",
     "description": "Sofa Web SDK url construction service component.",
     "main": "dist/sofa.urlConstructionService.js",
     "homepage": "http://www.sofa.io",
