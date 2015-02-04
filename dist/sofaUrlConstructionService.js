@@ -1,13 +1,18 @@
 /**
+<<<<<<< HEAD:dist/sofa.urlConstructionService.js
  * sofa-url-construction-service - v0.5.1 - 2014-12-08
+||||||| merged common ancestors
+ * sofa-url-construction-service - v0.5.0 - 2014-08-05
+=======
+ * sofa-url-construction-service - v0.5.0 - Wed Feb 04 2015 17:43:50 GMT+0100 (CET)
+>>>>>>> chore(dep): updates build process and generates new files:dist/sofaUrlConstructionService.js
  * http://www.sofa.io
  *
  * Copyright (c) 2014 CouchCommerce GmbH (http://www.couchcommerce.com / http://www.sofa.io) and other contributors
- * THIS SOFTWARE CONTAINS COMPONENTS OF THE SOFA.IO COUCHCOMMERCE SDK (WWW.SOFA.IO).
+ * THIS SOFTWARE CONTAINS COMPONENTS OF THE SOFA.IO COUCHCOMMERCE SDK (WWW.SOFA.IO)
  * IT IS PROVIDED UNDER THE LICENSE TERMS OF THE ATTACHED LICENSE.TXT.
  */
-;(function (sofa, undefined) {
-
+;(function (sofa, document, undefined) {
 'use strict';
 /* global sofa */
 /**
@@ -158,5 +163,4 @@ sofa.define('sofa.UrlConstructionService', function (configService) {
 
     return self;
 });
-
-} (sofa));
+}(sofa, document));
