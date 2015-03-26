@@ -6,7 +6,7 @@
         "Pascal Precht <pascal@couchcommerce.com>"
     ],
     "description": "Sofa Web SDK url construction service component.",
-    "main": "dist/sofa.urlConstructionService.js",
+    "main": "dist/sofaUrlConstructionService.js",
     "dependencies": {
         "sofa-core": "~0.3.x"
     },
