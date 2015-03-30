@@ -1,3 +1,11 @@
+### 0.5.2 (2015-03-30)
+
+
+#### Bug Fixes
+
+* **bower.json:** main pathname ([891952fb](https://github.com/sofa/sofa-url-construction-service/commit/891952fbce9e2dd64c9b1cc3283b8332db085e9f), closes [#3](https://github.com/sofa/sofa-url-construction-service/issues/3))
+
+
 ### 0.5.1 (2015-02-04)
 
 
