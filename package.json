@@ -32,6 +32,6 @@
     },
     "devDependencies": {
         "gulp": "^3.8.10",
-        "shared-sofa-component-tasks": "^0.7.1"
+        "shared-sofa-component-tasks": "sofa/shared-sofa-component-tasks#es6"
     }
 }

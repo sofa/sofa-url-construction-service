@@ -9,7 +9,13 @@
 ;(function (angular) {
 'use strict';
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _UrlConstructionService2 = require('UrlConstructionService');
+
+var _UrlConstructionService3 = _interopRequireDefault(_UrlConstructionService2);
+
 angular.module('sofa.urlConstructionService', ['sofa.core']).factory('urlConstructionService', ["configService", function (configService) {
-    var _UrlConstructionService = typeof UrlConstructionService === 'undefined' ? sofa.UrlConstructionService : UrlConstructionService;
+    var _UrlConstructionService = typeof _UrlConstructionService3['default'] === 'undefined' ? sofa.UrlConstructionService : _UrlConstructionService3['default'];
     return new _UrlConstructionService(configService);
 }]);}(angular));

@@ -6,10 +6,12 @@
  * THIS SOFTWARE CONTAINS COMPONENTS OF THE SOFA.IO COUCHCOMMERCE SDK (WWW.SOFA.IO)
  * IT IS PROVIDED UNDER THE LICENSE TERMS OF THE ATTACHED LICENSE.TXT.
  */
-;(function (angular) {
 'use strict';
 
-angular.module('sofa.urlConstructionService', ['sofa.core']).factory('urlConstructionService', ["configService", function (configService) {
-    var _UrlConstructionService = typeof UrlConstructionService === 'undefined' ? sofa.UrlConstructionService : UrlConstructionService;
-    return new _UrlConstructionService(configService);
-}]);}(angular));
+import UrlConstructionService from 'UrlConstructionService';
+
+angular.module('sofa.urlConstructionService', ['sofa.core'])
+    .factory('urlConstructionService', function (configService) {
+        let _UrlConstructionService = (typeof UrlConstructionService === 'undefined') ? sofa.UrlConstructionService : UrlConstructionService;
+        return new _UrlConstructionService(configService);
+    });

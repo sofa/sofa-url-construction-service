@@ -1,3 +1,11 @@
+/**
+ * sofa-url-construction-service - v0.5.3 - Fri May 15 2015 14:03:26 GMT+0200 (CEST)
+ * http://www.sofa.io
+ *
+ * Copyright (c) 2014 CouchCommerce GmbH (http://www.couchcommerce.com / http://www.sofa.io) and other contributors
+ * THIS SOFTWARE CONTAINS COMPONENTS OF THE SOFA.IO COUCHCOMMERCE SDK (WWW.SOFA.IO)
+ * IT IS PROVIDED UNDER THE LICENSE TERMS OF THE ATTACHED LICENSE.TXT.
+ */
 'use strict';
 /* global sofa */
 /**
@@ -12,8 +20,11 @@
  * As the name says. This service provides methods to construct URLs for
  * different use cases.
  */
-sofa.define('sofa.UrlConstructionService', function (configService) {
-    var self = {};
+class UrlConstructionService {
+    constructor(configService) {
+        this.configService = configService;
+    }
+
 
     /**
      * @sofadoc method
@@ -26,9 +37,10 @@ sofa.define('sofa.UrlConstructionService', function (configService) {
      * @param {string} pageId
      * @return {string} Url
      */
-    self.createUrlForContentPage = function (pageId) {
+    createUrlForContentPage(pageId) {
         return '/pages/' + pageId;
-    };
+    }
+
 
     /**
      * @sofadoc method
@@ -41,9 +53,9 @@ sofa.define('sofa.UrlConstructionService', function (configService) {
      * @param {int} categoryUrlId Category url id.
      * @return {string} Url
      */
-    self.createUrlForProducts = function (categoryUrlId) {
+    createUrlForProducts(categoryUrlId) {
         return '/cat/' + categoryUrlId + '/products';
-    };
+    }
 
     /**
      * @sofadoc method
@@ -56,9 +68,9 @@ sofa.define('sofa.UrlConstructionService', function (configService) {
      * @param {product} product Product object.
      * @return {string} Url
      */
-    self.createUrlForProduct = function (product) {
+    createUrlForProduct(product) {
         return '/cat/' + product.categoryUrlId + '/product/' + product.urlKey;
-    };
+    }
 
     /**
      * @sofadoc method
@@ -71,9 +83,9 @@ sofa.define('sofa.UrlConstructionService', function (configService) {
      * @param {int} categoryUrlId Category url id.
      * @return {string} Url
      */
-    self.createUrlForCategory = function (categoryUrlId) {
+    createUrlForCategory(categoryUrlId) {
         return '/cat/' + categoryUrlId;
-    };
+    }
 
     /**
      * @sofadoc method
@@ -85,9 +97,9 @@ sofa.define('sofa.UrlConstructionService', function (configService) {
      *
      * @return {string} Url
      */
-    self.createUrlForRootCategory = function () {
+    createUrlForRootCategory() {
         return '';
-    };
+    }
 
     /**
      * @sofadoc method
@@ -99,9 +111,9 @@ sofa.define('sofa.UrlConstructionService', function (configService) {
      *
      * @return {string} Url
      */
-    self.createUrlForCart = function () {
+    createUrlForCart() {
         return '/cart';
-    };
+    }
 
     /**
      * @sofadoc method
@@ -113,9 +125,9 @@ sofa.define('sofa.UrlConstructionService', function (configService) {
      *
      * @return {string} Url
      */
-    self.createUrlForCheckout = function () {
+    createUrlForCheckout() {
         return '/checkout';
-    };
+    }
 
     /**
      * @sofadoc method
@@ -128,9 +140,9 @@ sofa.define('sofa.UrlConstructionService', function (configService) {
      * @param {string} token Summary token.
      * @return {string} Url
      */
-    self.createUrlForSummary = function (token) {
+    createUrlForSummary(token) {
         return '/summary/' + token;
-    };
+    }
 
     /**
      * @sofadoc method
@@ -142,9 +154,15 @@ sofa.define('sofa.UrlConstructionService', function (configService) {
      *
      * @return {string} Url
      */
-    self.createUrlForShippingCostsPage = function () {
-        return '/pages/' + configService.get('linkShippingCosts', '');
-    };
+    createUrlForShippingCostsPage() {
+        return '/pages/' + this.configService.get('linkShippingCosts', '');
+    }
+}
 
-    return self;
+export default UrlConstructionService;
+
+/*_START_SOFA_DEFINE_*/
+sofa.define('sofa.UrlConstructionService', function (configService) {
+    return new UrlConstructionService(configService);
 });
+/*_END_SOFA_DEFINE_*/
